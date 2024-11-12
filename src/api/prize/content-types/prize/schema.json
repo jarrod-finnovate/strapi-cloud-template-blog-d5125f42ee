@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prizes",
+  "info": {
+    "singularName": "prize",
+    "pluralName": "prizes",
+    "displayName": "Prize",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 64
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "grand-prize",
+        "participant-prize",
+        "school-team-prize",
+        "community-team-prize"
+      ],
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 256
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "sponsor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::sponsor.sponsor"
+    }
+  }
+}
