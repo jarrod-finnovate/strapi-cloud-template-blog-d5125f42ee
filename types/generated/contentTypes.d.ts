@@ -517,6 +517,9 @@ export interface ApiPrizePrize extends Struct.CollectionTypeSchema {
         'participant-prize',
         'school-team-prize',
         'community-team-prize',
+        'corporate-team-prize',
+        'captain-prize',
+        'photo-submission-prize',
       ]
     > &
       Schema.Attribute.Required;

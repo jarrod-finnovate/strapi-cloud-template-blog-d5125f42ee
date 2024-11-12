@@ -23,7 +23,10 @@
         "grand-prize",
         "participant-prize",
         "school-team-prize",
-        "community-team-prize"
+        "community-team-prize",
+        "corporate-team-prize",
+        "captain-prize",
+        "photo-submission-prize"
       ],
       "required": true
     },
